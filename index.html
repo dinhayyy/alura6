@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protótipo de Leitura Estável e Aprendizados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header class="app-header">
+            <h1>Leitor de Dados Antifalhas</h1>
+            <p>Teste cliques rápidos e repetidos para avaliar a estabilidade do mecanismo assíncrono.</p>
+        </header>
+
+        <main class="interaction-area">
+            <button id="btn-ler" class="btn-primary">Iniciar Leitura de Dados</button>
+            <div id="status-leitura" class="status-box ready">Pronto para iniciar</div>
+            <div id="painel-resultado" class="result-box">Os dados lidos da API aparecerão aqui...</div>
+        </main>
+
+        <hr class="divider">
+
+        <section class="document-section">
+            <h2>Relatório de Usabilidade & Aprendizados do Grupo</h2>
+            <p class="subtitle">Mapeamento gerado após observar usuários interagindo com o protótipo:</p>
+
+            <div class="learning-grid">
+                <div class="learning-card success">
+                    <h3>1. Estabilidade Técnica Garantida</h3>
+                    <p>O mecanismo de abortar requisições funcionou perfeitamente sob estresse de cliques rápidos. O app não travou.</p>
+                </div>
+                <div class="learning-card warning">
+                    <h3>2. Transição Visual Muito Veloz</h3>
+                    <p>A limpeza de tela é tão rápida que confunde o usuário se o clique foi registrado. Requer animação de transição.</p>
+                </div>
+                <div class="learning-card info">
+                    <h3>3. Facilidade no Contador Dinâmico</h3>
+                    <p>Inserir o índice da leitura (#1, #2) ajudou o usuário a entender em qual etapa da fila ele se encontrava instantaneamente.</p>
+                </div>
+                <div class="learning-card utility">
+                    <h3>4. Captura Silenciosa de Erros</h3>
+                    <p>Tratar o cancelamento em background evitou pop-ups de erro desnecessários na tela do usuário, limpando a experiência.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
